@@ -1,0 +1,245 @@
+{
+    "navbar":
+    {
+        "explorerLink": "Explorer",
+        "walletGenLink": "Wallet Generator"
+    },
+
+    "homepage": 
+    {
+        "topHeader": "Every Bitcoin private key and address is on this website.",
+        "topSubheader": "Satoshi Nakamoto's private key is hidden on one of the pages...",
+        "viewRandomPageBtn": "View random page",
+        "viewRandomTestnetPageBtn": "View random testnet page",
+
+        "searchBarHeader": "Search",
+        "searchBarSubheader": "If you are curious which page your private key is on, you can search for it.",
+        "searchBarSuggestion": "Although, is entering your own private key on a random website really a good idea?",
+        "searchBarErrMsg": "That's not a valid private key!",
+ 
+        "ominousMsgLink": "Ominous message hidden in the private keys",
+        "lessOminousMsgLink": "Another, slightly less ominous message",
+        "didYouKnowLink": "Did you know?"
+    },
+
+    "footer":
+    {
+        "aboutLink": "About ElliptiKeys",
+        "donateLink": "Donate",
+        "sourceLink": "Source Code",
+        "devLink": "Developer Site"
+    },
+
+    "keyspage":
+    {
+        "testnetWarning": "You are currently exploring testnet keys. Testnet is an alternative Bitcoin blockchain that developers use for testing. Testnet coins do not hold any value.",
+        "of": "of",
+        "loading": "Loading...",
+
+        "autoGen": 
+        {
+            "activate" : "Activate Auto-Gen",
+            "stop": "Stop Auto-Gen",
+            "stopOnYellow": "Stop on yellow/green",
+            "stopOnGreen": "Stop on green"
+        }
+    },
+
+    "about": 
+    {
+        "topHeader": "About ElliptiKeys",
+        "mainDescription": "As you could probably tell, this site is based off the ever-popular <a href='https://keys.lol' class='whiteLink' target='blank'>keys.lol site.</a> However, this version is capable of deriving every public key type including SegWit and Bech32 addresses, as opposed to only Legacy-type addresses. This version also displays all compressed private keys alongside uncompressed ones.",
+        "darkMode": "It's also in dark mode",
+        "nPossibilities": "2^256 possibilities",
+        
+        "toVisualize" : "To visualize how many private keys there really are and how you will never actually find any coins on here, I recommend watching this video.",
+        "howItWorksHeader": "How it works",
+        "howItWorks": "Knowing how massive the possible keyspace truly is, storing every single private and public key simply would not be possible. The keys are all dynamically computed when the page is loaded. ",
+        "howItWorks2": "Since we know a private key is simply a number somewhere between 1 and 2^256, it calculates them starting at n=([page number] * [keys/page]) and derives every private key and its corresponding address formats from n to n + [keys/page]. Once the private and public keys have been derived, it uses the <a href='https://www.blockchain.com/api' class='whiteLink' target='blank'>Blockchain.com API</a> to perform the balance checking. ",
+        
+        "redKeys": "• Keys that have never been used will turn <span class='text-red'>red.</span> ",
+        "yellowKeys": "• Keys that have been previously used that currently have zero balance will turn <span class='text-yellow'>yellow.</span>",
+        "greenKeys": "• Keys that currently contain coins will turn <span class='text-lime'>green.</span>",
+        "cyanKeys": "• If you search for a private key, its text on the page will turn <span class='text-cyan'>cyan.</span>",
+        "knowMore": "If you would like to know more about how this happens behind the scenes, I recommend taking a look at <a href='https://www.oreilly.com/library/view/mastering-bitcoin-2nd/9781491954379/ch04.html#:~:text=In%20bitcoin%2C%20we%20use%20public,transactions%20to%20spend%20the%20funds.' target='_blank' class='whiteLink'>this article.</a>",
+
+        "externalToolsUsed": "External Tools Used",
+
+        "btcBalanceChecker": "Bitcoin balance checker powered by <a href='https://www.blockchain.com/api' class='whiteLink' target='_blank'>Blockchain.com Data API</a> and <a href='https://api.haskoin.com/' class='whiteLink'>Haskoin API for Testnet</a>",
+        "priceTickerData": "Price ticker data pulled from <a href='https://www.coingecko.com/' target='_blank' class='whiteLink'>CoinGecko</a>",
+        "icons8": "Icons sourced from <a href='https://icons8.com/' target='_blank' class='whiteLink'>Icons8</a>",
+
+        "angular": "Coded with <a href='https://angular.io/' target='_blank' class='whiteLink'>Angular</a> framework",
+        "cryptoJs": "JS cryptographic hashing library from <a href='https://cryptojs.gitbook.io/docs/' class='whiteLink' target='_blank'>CryptoJS</a>",
+        "ellipticCurve": "Elliptic Curve implementation by <a href='https://github.com/paulmillr/noble-secp256k1' target='_blank' class='whiteLink'>paulmillr</a>"
+    },
+
+    "donate": 
+    {
+      "topHeader": "Donate",
+      "mainDescription": "ElliptiKeys is a project made to educate people about the security of the Bitcoin network. Many people are concerned that their private key will be brute-forced, and this site is meant to show that this will simply never be the case. ",
+      "openSource": "All of the code for the site is <a href='https://github.com/ICARUS-2/ElliptiKeys-ng' target='_blank' class='whiteLink'>100% open-source</a> and can be compiled and ran on any computer :)",
+      "wishToSupport": "If you wish to support this site, any donation is greatly appreciated!"
+    },
+
+    "explorer": 
+    {
+        "address": 
+        {
+            "errorCallingApi": "Error occurred while retrieving data",
+            "topHeader": "Address",
+            
+            "table":
+            {
+                "network": "Network",
+                "format": "Format",
+                "totalReceived": "Total Received",
+                "totalSent": "Total Sent",
+                "balance": "Balance",
+                "transactions": "Transactions"
+            },
+
+            "transactionsHeader": "Transactions"
+        },
+
+        "block": 
+        {
+            "topHeader": "Block",
+            
+            "table": 
+            {
+                "hash": "Hash",
+                "previousHash": "Previous Hash",
+                "network": "Network",
+                "merkleRoot": "Merkle Root",
+                "transactions": "Transactions",
+                "timestamp": "Timestamp",
+                "nonce": "Nonce",
+                "size": "Size",
+                "baseReward": "Base Reward",
+                "feeReward": "Fee Reward",
+                "volume": "Volume"
+            },
+
+            "transactionsHeader": "Transactions"
+        },
+
+        "index": 
+        {
+            "topHeader": "ElliptiKeys Blockchain Explorer",
+            "poweredBy": "Powered by <a href='https://www.blockchain.com/api' target='_blank' class='whiteLink'>Blockchain.com</a> and <a href='https://haskoin.com/' target='_blank' class='whiteLink'>Haskoin</a>",
+            "mainDescription": "Using this tool, you can look up any Bitcoin or Testnet block number, address, transaction, or even a private key (please not your own) to view its data.",
+            "searchBtn": "Search",
+            "noSearchResults": "No search results for ",
+            "possibleSearchResults": "possible search results for ",
+
+            "searchType":
+            {
+                "address": "Address",
+                "privateKey": "WIF Private Key",
+                "transaction": "Transaction",
+                "block": "Block"
+            }
+        },
+
+        "privateKey": 
+        {
+            "topHeader": "WIF Private Key",
+
+            "table":
+            {
+                "privateKey": "Private Key",
+                "network": "Network",
+                "format": "Format",
+                "uncompressed": "Uncompressed",
+                "compressed": "Compressed",
+                "uncompressedVersion": "Uncompressed Version",
+                "compressedVersion": "Compressed Version",
+                "legacyAddress": "Legacy Address",
+                "segwitAddress": "SegWit Address",
+                "bech32Address": "Bech32 Address",
+                "page": "Page",
+                "openElliptiKeysPage": "Open ElliptiKeys Page"
+            }
+        },
+
+        "transaction":
+        {
+            "topHeader": "Transaction"
+        },
+
+        "transactionList": 
+        {
+            "noTxFound": "No transactions found.",
+
+            "table": 
+            {
+                "amount": "Amount",
+                "hash": "Hash/ID",
+                "fee": "Fee",
+                "confirmed": "Confirmed",
+                "unconfirmed": "Unconfirmed",
+                "status": "Status",
+                "blockNum": "Block No.",
+                "coinbaseTransaction": "COINBASE TRANSACTION",
+                "timestamp": "Timestamp",
+
+                "showBtn": "Show All",
+                "hideBtn": "Hide List"
+            }
+        }
+    },
+
+    "walletGenerator":
+    {
+        "addressTypeSelector": 
+        {
+            "topHeader": "Address Type"
+        },
+
+        "bulkGenerate": 
+        {
+            "quantity": "Quantity"
+        },
+
+        "mnemonic": 
+        {
+            "generateBtn": "Generate"
+        },
+
+        "mnemonicWordCount": 
+        {
+            "topHeader": "Word Count" 
+        },
+
+        "networkTypeSelector": 
+        {
+            "topHeader": "Network Type"
+        },
+
+        "qrCodeTypeSelector": 
+        {
+            "topHeader": "QR Code Error Correction",
+            "high": "High",
+            "quartile": "Quartile",
+            "medium": "Medium",
+            "low": "Low"
+        },
+
+        "singleKeyset":
+        {
+            "addressHeaderText": "Address (Load/Receive)",
+            "privateKeyHeaderText": "Private Key (Spend/Withdraw)",
+            "generateBtn": "Generate New Wallet"
+        },
+
+        "index":
+        {
+            "topHeader": "ElliptiKeys Wallet Generator",
+            "alertText": "!!! WARNING: You appear to be connected to the Internet. If you wish to generate important wallets, it is recommended to download the <a href='https://github.com/ICARUS-2/ElliptiKeys-ng' target='_blank' class='alert-link bg-transparent'> ElliptiKeys source code</a> and run it offline to minimize risk of your wallet being compromised.",
+            "singleAddressBtn": "Single Address",
+            "bulkGenerateBtn": "Bulk Generate",
+            "mnemonicBtn": "Mnemonic"
+        }
+    }
+}
